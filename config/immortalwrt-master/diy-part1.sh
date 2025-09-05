@@ -9,6 +9,9 @@
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
+echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
+echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+
 # other
 # rm -rf package/emortal/{autosamba,ipv6-helper}
 
