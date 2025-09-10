@@ -11,7 +11,7 @@
 
 echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
 echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
-
+echo 'src-git fm350webui https://gitee.com/kcro/luci-app-fm350webui.git;master' >> feeds.conf.default
 # other
 # rm -rf package/emortal/{autosamba,ipv6-helper}
 
