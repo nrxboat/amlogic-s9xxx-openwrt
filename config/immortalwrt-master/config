@@ -192,7 +192,7 @@ CONFIG_JSON_OVERVIEW_IMAGE_INFO=y
 CONFIG_SIGNED_PACKAGES=y
 CONFIG_SIGNATURE_CHECK=y
 CONFIG_DOWNLOAD_CHECK_CERTIFICATE=y
-CONFIG_USE_APK=y
+CONFIG_USE_APK=n
 
 #
 # General build options
@@ -1722,7 +1722,7 @@ CONFIG_PACKAGE_mtd=y
 CONFIG_PACKAGE_netifd=y
 # CONFIG_PACKAGE_nft-qos is not set
 CONFIG_PACKAGE_openwrt-keyring=y
-# CONFIG_PACKAGE_opkg is not set
+CONFIG_PACKAGE_opkg=y
 CONFIG_PACKAGE_procd=y
 
 #
@@ -2737,14 +2737,14 @@ CONFIG_PACKAGE_kmod-mdio-bcm-unimac=y
 CONFIG_PACKAGE_kmod-mdio-devres=y
 CONFIG_PACKAGE_kmod-mdio-gpio=y
 CONFIG_PACKAGE_kmod-mdio-thunder=y
-# CONFIG_PACKAGE_kmod-mhi-net is not set
-# CONFIG_PACKAGE_kmod-mhi-wwan-ctrl is not set
-# CONFIG_PACKAGE_kmod-mhi-wwan-mbim is not set
+CONFIG_PACKAGE_kmod-mhi-net=y
+CONFIG_PACKAGE_kmod-mhi-wwan-ctrl=y
+CONFIG_PACKAGE_kmod-mhi-wwan-mbim=y
 CONFIG_PACKAGE_kmod-mii=y
 # CONFIG_PACKAGE_kmod-mlx4-core is not set
 # CONFIG_PACKAGE_kmod-mlx5-core is not set
 # CONFIG_PACKAGE_kmod-mlxfw is not set
-# CONFIG_PACKAGE_kmod-mtk-t7xx is not set
+CONFIG_PACKAGE_kmod-mtk-t7xx=y
 CONFIG_PACKAGE_kmod-mvneta=y
 CONFIG_PACKAGE_kmod-mvpp2=y
 # CONFIG_PACKAGE_kmod-natsemi is not set
@@ -2813,7 +2813,7 @@ CONFIG_PACKAGE_kmod-thunderx-net=y
 # CONFIG_PACKAGE_kmod-via-rhine is not set
 # CONFIG_PACKAGE_kmod-via-velocity is not set
 CONFIG_PACKAGE_kmod-vmxnet3=y
-# CONFIG_PACKAGE_kmod-wwan is not set
+CONFIG_PACKAGE_kmod-wwan=y
 # end of Network Devices
 
 #
@@ -2873,7 +2873,7 @@ CONFIG_PACKAGE_kmod-pppoe=y
 # CONFIG_PACKAGE_kmod-pppol2tp is not set
 CONFIG_PACKAGE_kmod-pppox=y
 # CONFIG_PACKAGE_kmod-pptp is not set
-# CONFIG_PACKAGE_kmod-qrtr-mhi is not set
+CONFIG_PACKAGE_kmod-qrtr-mhi=y
 # CONFIG_PACKAGE_kmod-qrtr-tun is not set
 # CONFIG_PACKAGE_kmod-sched is not set
 # CONFIG_PACKAGE_kmod-sched-act-police is not set
@@ -2931,8 +2931,8 @@ CONFIG_PACKAGE_kmod-keys-encrypted=y
 CONFIG_PACKAGE_kmod-keys-trusted=y
 # CONFIG_PACKAGE_kmod-lkdtm is not set
 # CONFIG_PACKAGE_kmod-lp is not set
-# CONFIG_PACKAGE_kmod-mhi-bus is not set
-# CONFIG_PACKAGE_kmod-mhi-pci-generic is not set
+CONFIG_PACKAGE_kmod-mhi-bus=y
+CONFIG_PACKAGE_kmod-mhi-pci-generic=y
 CONFIG_PACKAGE_kmod-mmc=y
 # CONFIG_PACKAGE_kmod-mtd-rw is not set
 # CONFIG_PACKAGE_kmod-mtdoops is not set
@@ -3044,8 +3044,8 @@ CONFIG_PACKAGE_kmod-usb-net-mcs7830=y
 CONFIG_PACKAGE_kmod-usb-net-pegasus=y
 CONFIG_PACKAGE_kmod-usb-net-pl=y
 CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
-# CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-fibocom is not set
-# CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel is not set
+CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-fibocom=y
+CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel=y
 CONFIG_PACKAGE_kmod-usb-net-rndis=y
 CONFIG_PACKAGE_kmod-usb-net-rtl8150=y
 CONFIG_PACKAGE_kmod-usb-net-rtl8152=y
@@ -3077,7 +3077,7 @@ CONFIG_PACKAGE_kmod-usb-serial-cp210x=y
 CONFIG_PACKAGE_kmod-usb-serial-option=y
 # CONFIG_PACKAGE_kmod-usb-serial-oti6858 is not set
 CONFIG_PACKAGE_kmod-usb-serial-pl2303=y
-# CONFIG_PACKAGE_kmod-usb-serial-qualcomm is not set
+CONFIG_PACKAGE_kmod-usb-serial-qualcomm=y
 # CONFIG_PACKAGE_kmod-usb-serial-sierrawireless is not set
 # CONFIG_PACKAGE_kmod-usb-serial-simple is not set
 # CONFIG_PACKAGE_kmod-usb-serial-ti-usb is not set
@@ -7112,9 +7112,9 @@ CONFIG_PACKAGE_comgt=y
 # CONFIG_PACKAGE_comgt-directip is not set
 CONFIG_PACKAGE_comgt-ncm=y
 # CONFIG_PACKAGE_modemband is not set
-# CONFIG_PACKAGE_quectel-cm is not set
+CONFIG_PACKAGE_quectel-cm=y
 # CONFIG_PACKAGE_sendat is not set
-# CONFIG_PACKAGE_umbim is not set
+CONFIG_PACKAGE_umbim=y
 CONFIG_PACKAGE_uqmi=y
 # end of WWAN
 
